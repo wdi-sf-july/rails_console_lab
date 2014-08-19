@@ -9,7 +9,7 @@ For this lab, we'd like you to strengthen your Rails console skills. This lab is
 
 ### Tasks to create
 
-1. Using the new/save syntax, create a student a first and last name and an age 
+1. Using the new/save syntax, create a student, first and last name and an age 
 2. Save the student to the database
 3. Using the find/set/save syntax update the student's first name to taco
 4. Delete the student (where first_name is taco)
@@ -19,7 +19,7 @@ For this lab, we'd like you to strengthen your Rails console skills. This lab is
 7. Combine all of these individual validations into one validation (using validate and a hash) 
 8. Using the create syntax create a student named John Doe who is 33 years old
 9. Show if this new student entry is valid
-10. Show the number of errors in the errors array for this student
+10. Show the number of errors for this student instance
 11. In one command, Change John Doe's name to Jonathan Doesmith 
 12. Clear the errors array
 13. Save Jonathan Doesmith
