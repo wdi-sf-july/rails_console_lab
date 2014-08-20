@@ -15,32 +15,32 @@ For this lab, we'd like you to strengthen your Rails console skills. This lab is
 
 2. Save the student to the database
 
-       tim.save
+        tim.save
 
 3. Using the find/set/save syntax update the student's first name to taco
 
-       tim = Student.find(1)
-       tim.first_name = "taco"
-       tim.save
+        tim = Student.find(1)
+        tim.first_name = "taco"
+        tim.save
 
 4. Delete the student (where first_name is taco)
 
-       tim = Student.find_by_first_name("taco")
-       tim.destroy
+        tim = Student.find_by_first_name("taco")
+        tim.destroy
 
 5. Validate that every Student's last name is unique
 
-       class Student < ActiveRecord::Base
-         validates_uniqueness_of :last_name
-       end
+        class Student < ActiveRecord::Base
+          validates_uniqueness_of :last_name
+        end
 
 6. Validate that every Student has a first and last name that is longer than 4 characters
 
-       class Student < ActiveRecord::Base
-         validates_uniqueness_of :last_name
-         validates_length_of :first_name, :minimum => 5
-         validates_length_of :last_name, :minimum => 5
-       end
+        class Student < ActiveRecord::Base
+          validates_uniqueness_of :last_name
+          validates_length_of :first_name, :minimum => 5
+          validates_length_of :last_name, :minimum => 5
+        end
 
 7. Validate that every first and last name cannot be empty
 
